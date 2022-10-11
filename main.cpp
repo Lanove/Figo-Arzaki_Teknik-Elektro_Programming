@@ -13,7 +13,7 @@ double vtan(double v){
 int main() {
     int vtanguide;
     double vo,kecepatan_tangensial;
-    double smallest_delta = 100.;
+    double smallest_delta = std::numeric_limits<double>::max();
     int jarak;
     scanf("%d",&vtanguide);
     // vtan maksimal adalah 30, jika input lebih dari 30, clip pada 30
